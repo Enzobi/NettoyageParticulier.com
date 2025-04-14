@@ -3,218 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Clean à Proxi offre des services de nettoyage professionnels pour particuliers et entreprises en Eure-et-Loir (Chartres, Dreux, Châteaudun). Contactez-nous pour un devis gratuit."/>
-  <meta name="keywords" content="nettoyage professionnel, nettoyage particuliers, entretien bureaux, désinfection, nettoyage vitres, nettoyage chantier, Eure-et-Loir, Chartres, Dreux, Châteaudun"/>
-  <meta name="robots" content="index, follow"/>
-  <meta property="og:title" content="Clean à Proxi - Services de nettoyage à Chartres, Dreux et Eure-et-Loir"/>
-  <meta property="og:description" content="Nettoyage professionnel pour particuliers, entreprises et collectivités en Eure-et-Loir. Contactez Clean à Proxi pour un service rapide et efficace à Chartres, Dreux et Châteaudun."/>
-  <meta property="og:url" content="https://www.cleanaproxi.com"/>
-  <title>Clean à Proxi - Eure-et-Loir</title>
+  <title>Nettoyage Express Eure-et-Loir</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background-color: #f9fbfd;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: url('https://source.unsplash.com/1600x500/?cleaning,team') center/cover no-repeat;
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-      position: relative;
-    }
-
-    header::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 0;
-    }
-
-    header h1, header p {
-      position: relative;
-      z-index: 1;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-    }
-
-    nav {
-      background-color: #ffffff;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: #007b9e;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1em;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #005f78;
-    }
-
-    .container {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      animation: fadeIn 1s ease-in;
-    }
-
-    h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #008cba;
-      text-align: center;
-    }
-
-    h3 {
-      color: #005f78;
-      margin-top: 40px;
-    }
-
-    p {
-      font-size: 1.1em;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-      font-size: 1.1em;
-    }
-
-    .contact {
-      margin-top: 30px;
-      padding: 30px;
-      background-color: #e9f6fa;
-      border-left: 5px solid #007b9e;
-      border-radius: 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background-color: #f1f1f1;
-      font-size: 0.9em;
-      margin-top: 60px;
-      color: #777;
-    }
-
-    .gallery {
-      margin-top: 40px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      object-fit: cover;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-      .container {
-        padding: 20px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header id="accueil">
-    <h1>Clean à Proxi</h1>
-    <p>Services de nettoyage professionnels en Eure-et-Loir : Chartres, Dreux, Châteaudun et environs</p>
+  <header>
+    <h1>Nettoyage Express Eure-et-Loir</h1>
+    <p>Votre spécialiste du nettoyage à Chartres, Dreux, Châteaudun et dans tout l'Eure-et-Loir</p>
   </header>
 
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#services">Services</a>
-    <a href="#types">Particuliers & Professionnels</a>
+    <a href="#particuliers-professionnels">Particuliers & Professionnels</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container">
-    <h2 id="services">Nos services de nettoyage</h2>
-    <p>Clean à Proxi vous propose une gamme complète de prestations de nettoyage adaptées à vos besoins. Nous intervenons rapidement avec un souci constant de qualité, que vous soyez un particulier ou un professionnel.</p>
+  <section class="container" id="accueil">
+    <h2>Bienvenue chez Nettoyage Express Eure-et-Loir</h2>
+    <p>
+      Vous cherchez un service de nettoyage rapide, efficace et professionnel dans l’Eure-et-Loir (28) ? Ne cherchez plus ! <strong>Nettoyage Express Eure-et-Loir</strong> vous accompagne pour tous vos besoins en propreté, que vous soyez un particulier ou un professionnel.
+    </p>
+    <p>
+      Notre entreprise met un point d'honneur à offrir des prestations de qualité, avec des produits respectueux de l’environnement, une équipe formée et réactive, et une disponibilité 7j/7.
+    </p>
+    <p>
+      Nous intervenons à <strong>Chartres</strong>, <strong>Dreux</strong>, <strong>Châteaudun</strong>, <strong>Nogent-le-Rotrou</strong> et dans tout le département. Que ce soit pour un nettoyage ponctuel ou un contrat d’entretien régulier, nous sommes à votre écoute.
+    </p>
+    <img src="images/nettoyage-bureau.jpg" alt="Nettoyage de bureaux" class="illustration">
+    <img src="images/nettoyage-vitres.jpg" alt="Nettoyage de vitres" class="illustration">
+  </section>
 
-    <div class="gallery">
-      <img src="https://img.freepik.com/free-photo/professional-cleaning-service-person-using-steam-cleaner-office_23-2150520602.jpg" alt="Nettoyage résidentiel">
-      <img src="https://www.entreprisenettoyage.net/public/upload/img/entretien-sol-industriel.jpg" alt="Nettoyage de bureaux">
-      <img src="https://www.o2.fr/documents/20124/80845/4c-43-nettoyage-de-vitres.jpg/746275e1-21bb-793d-18fb-cf453f141bf0?t=1584957444694" alt="Nettoyage de vitres">
-    </div>
-
-    <h2 id="types">Particuliers & Professionnels</h2>
-
-    <h3>Pour les particuliers</h3>
-    <p>Nous facilitons votre quotidien grâce à des prestations personnalisées, ponctuelles ou régulières :</p>
+  <section class="container" id="services">
+    <h2>Nos Services</h2>
     <ul>
-      <li>Nettoyage de maison ou appartement</li>
-      <li>Remise en état après travaux</li>
-      <li>Nettoyage des vitres, sols, sanitaires</li>
-      <li>Entretien d'espaces extérieurs</li>
+      <li>🧽 Nettoyage de bureaux et locaux professionnels</li>
+      <li>🏠 Entretien de maisons et appartements</li>
+      <li>🧹 Remise en état après travaux ou sinistre</li>
+      <li>🪟 Nettoyage de vitres (intérieur & extérieur)</li>
+      <li>🧴 Désinfection et nettoyage sanitaire</li>
+      <li>🏢 Entretien de copropriétés et immeubles</li>
     </ul>
-    <p>Nos produits sont respectueux de l’environnement, pour la sécurité de votre foyer.</p>
+  </section>
 
-    <h3>Pour les professionnels</h3>
-    <p>Nous accompagnons les entreprises de tous secteurs pour garantir un environnement de travail propre, sain et accueillant :</p>
+  <section class="container" id="particuliers-professionnels">
+    <h2>Particuliers & Professionnels</h2>
+    <p>
+      Nous proposons des prestations adaptées à chaque besoin :
+    </p>
+    <h3>Pour les particuliers :</h3>
     <ul>
-      <li>Nettoyage de bureaux, commerces, cabinets</li>
-      <li>Désinfection de locaux professionnels</li>
-      <li>Entretien régulier ou interventions ponctuelles</li>
-      <li>Respect des normes d’hygiène (ERP, HACCP...)</li>
+      <li>Nettoyage de fin de chantier ou après déménagement</li>
+      <li>Grand ménage de printemps</li>
+      <li>Entretien régulier de votre maison ou appartement</li>
     </ul>
-    <p>Nous intervenons en horaires flexibles selon vos contraintes professionnelles.</p>
+    <h3>Pour les professionnels :</h3>
+    <ul>
+      <li>Nettoyage de bureaux et open spaces</li>
+      <li>Entretien de commerces et vitrines</li>
+      <li>Désinfection de locaux (conformité sanitaire)</li>
+    </ul>
+  </section>
 
-    <div class="contact" id="contact">
-      <h3>Contactez-nous</h3>
-      <p><strong>Téléphone :</strong> 06.41.09.22.75</p>
-      <p><strong>Email :</strong> cleanaproxi@gmail.com</p>
-      <p><strong>Zone d’intervention :</strong> Eure-et-Loir (28) - Chartres, Dreux, Nogent-le-Rotrou, Châteaudun, etc.</p>
-    </div>
-  </div>
+  <section class="container contact" id="contact">
+    <h2>Contactez-nous</h2>
+    <p><strong>Téléphone :</strong> 06.41.09.22.75</p>
+    <p><strong>Email :</strong> cleanaproxi@gmail.com</p>
+    <p><strong>Zone d’intervention :</strong> Eure-et-Loir (28) - Chartres, Dreux, Nogent-le-Rotrou, Châteaudun, etc.</p>
+  </section>
 
   <footer>
-    &copy; 2025 Clean à Proxi. Tous droits réservés.
+    &copy; 2025 Nettoyage Express Eure-et-Loir. Tous droits réservés.
   </footer>
-
 </body>
 </html>
+
 
 

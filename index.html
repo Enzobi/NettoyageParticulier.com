@@ -9,13 +9,13 @@
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
-      background-color: #f4f8fb;  /* Couleur d'arrière-plan claire */
-      color: #333;  /* Texte gris foncé pour une bonne lisibilité */
+      background-color: #f4f8fb;
+      color: #333;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #007b9e, #88d4a3);  /* Gradient bleu et vert pastel */
+      background: linear-gradient(135deg, #007b9e, #88d4a3);
       color: white;
       padding: 40px 20px;
       text-align: center;
@@ -27,7 +27,7 @@
     }
 
     nav {
-      background-color: #ffffff;  /* Menu en fond blanc pour rester propre */
+      background-color: #ffffff;
       display: flex;
       justify-content: center;
       gap: 30px;
@@ -36,7 +36,7 @@
     }
 
     nav a {
-      color: #007b9e;  /* Liens en bleu vif */
+      color: #007b9e;
       text-decoration: none;
       font-weight: 600;
       font-size: 1.1em;
@@ -44,7 +44,7 @@
     }
 
     nav a:hover {
-      color: #005f78;  /* Lien qui change de couleur au survol */
+      color: #005f78;
     }
 
     .container {
@@ -60,7 +60,7 @@
     h2 {
       font-size: 2em;
       margin-bottom: 20px;
-      color: #007b9e;  /* Titre section en bleu vif */
+      color: #007b9e;
     }
 
     h3 {
@@ -79,15 +79,23 @@
     .contact {
       margin-top: 30px;
       padding: 20px;
-      background-color: #e9f6fa;  /* Fond léger vert pastel */
+      background-color: #e9f6fa;
       border-left: 5px solid #007b9e;
       border-radius: 8px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      margin-top: 20px;
+      border-radius: 10px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #f1f1f1;  /* Footer gris clair */
+      background-color: #f1f1f1;
       font-size: 0.9em;
       margin-top: 40px;
       color: #777;
@@ -127,46 +135,53 @@
   <section class="container" id="accueil">
     <h2>Bienvenue chez Nettoyage Express Eure-et-Loir</h2>
     <p>
-      Vous cherchez un service de nettoyage rapide, efficace et professionnel dans l’Eure-et-Loir (28) ? Ne cherchez plus ! <strong>Nettoyage Express Eure-et-Loir</strong> vous accompagne pour tous vos besoins en propreté, que vous soyez un particulier ou un professionnel.
+      Chez <strong>Nettoyage Express Eure-et-Loir</strong>, nous mettons notre savoir-faire au service de votre confort et de votre tranquillité. Notre mission est simple : offrir à nos clients des espaces propres, sains et agréables à vivre ou à travailler.
     </p>
     <p>
-      Notre entreprise met un point d'honneur à offrir des prestations de qualité, avec des produits respectueux de l’environnement, une équipe formée et réactive, et une disponibilité 7j/7.
+      Grâce à notre réactivité, notre efficacité et notre professionnalisme, nous nous positionnons comme l’un des acteurs incontournables du nettoyage dans le département 28. Notre équipe est formée pour intervenir dans tous types d’environnements, qu’il s’agisse d’appartements, de maisons, de bureaux, ou de locaux professionnels.
     </p>
     <p>
-      Nous intervenons à <strong>Chartres</strong>, <strong>Dreux</strong>, <strong>Châteaudun</strong>, <strong>Nogent-le-Rotrou</strong> et dans tout le département. Que ce soit pour un nettoyage ponctuel ou un contrat d’entretien régulier, nous sommes à votre écoute.
+      Faites appel à une entreprise locale et dynamique qui comprend vos besoins et y répond avec précision et efficacité. Devis gratuit, intervention rapide, satisfaction garantie.
     </p>
-    <img src="images/nettoyage-bureau.jpg" alt="Nettoyage de bureaux" class="illustration">
-    <img src="images/nettoyage-vitres.jpg" alt="Nettoyage de vitres" class="illustration">
   </section>
 
   <section class="container" id="services">
     <h2>Nos Services</h2>
+    <p>
+      Nous proposons une gamme complète de services de nettoyage, adaptés à tous les besoins, qu’ils soient ponctuels ou réguliers. Nos prestations sont réalisées avec sérieux, dans le respect des normes sanitaires en vigueur.
+    </p>
     <ul>
-      <li>🧽 Nettoyage de bureaux et locaux professionnels</li>
-      <li>🏠 Entretien de maisons et appartements</li>
-      <li>🧹 Remise en état après travaux ou sinistre</li>
-      <li>🪟 Nettoyage de vitres (intérieur & extérieur)</li>
-      <li>🧴 Désinfection et nettoyage sanitaire</li>
-      <li>🏢 Entretien de copropriétés et immeubles</li>
+      <li>🧽 Nettoyage de bureaux, open space et espaces professionnels</li>
+      <li>🏠 Entretien régulier de logements (appartements, maisons)</li>
+      <li>🔧 Remise en état après travaux ou sinistres (dégâts des eaux, incendies)</li>
+      <li>🪟 Nettoyage de vitres, baies vitrées, vérandas</li>
+      <li>🧴 Désinfection des espaces à forte fréquentation</li>
+      <li>🏢 Nettoyage des parties communes d'immeubles et copropriétés</li>
     </ul>
   </section>
 
   <section class="container" id="particuliers-professionnels">
     <h2>Particuliers & Professionnels</h2>
-    <p>
-      Nous proposons des prestations adaptées à chaque besoin :
-    </p>
     <h3>Pour les particuliers :</h3>
+    <p>
+      Nous vous aidons à garder votre intérieur impeccable en toute saison. Que vous ayez besoin d’un grand ménage de printemps, d’une désinfection après un événement, ou simplement d’un entretien hebdomadaire, notre équipe est là pour vous.
+    </p>
     <ul>
-      <li>Nettoyage de fin de chantier ou après déménagement</li>
-      <li>Grand ménage de printemps</li>
-      <li>Entretien régulier de votre maison ou appartement</li>
+      <li>Ménage régulier ou ponctuel</li>
+      <li>Nettoyage après déménagement ou emménagement</li>
+      <li>Désinfection préventive ou curative</li>
+      <li>Nettoyage en profondeur (sols, murs, vitres, cuisines, sanitaires)</li>
     </ul>
+
     <h3>Pour les professionnels :</h3>
+    <p>
+      Un environnement de travail propre améliore le bien-être des salariés et l’image de votre entreprise. C’est pourquoi nous vous proposons des contrats d’entretien adaptés à vos besoins : flexibilité, discrétion, efficacité.
+    </p>
     <ul>
-      <li>Nettoyage de bureaux et open spaces</li>
-      <li>Entretien de commerces et vitrines</li>
-      <li>Désinfection de locaux (conformité sanitaire)</li>
+      <li>Entretien de bureaux et salles de réunion</li>
+      <li>Nettoyage de commerces et vitrines</li>
+      <li>Désinfection de locaux professionnels</li>
+      <li>Nettoyage industriel ou de grande surface</li>
     </ul>
   </section>
 
@@ -174,7 +189,18 @@
     <h2>Contactez-nous</h2>
     <p><strong>Téléphone :</strong> 06.41.09.22.75</p>
     <p><strong>Email :</strong> cleanaproxi@gmail.com</p>
-    <p><strong>Zone d’intervention :</strong> Eure-et-Loir (28) - Chartres, Dreux, Nogent-le-Rotrou, Châteaudun, etc.</p>
+    <p><strong>Zone d’intervention :</strong> Eure-et-Loir (28) - Chartres, Dreux, Nogent-le-Rotrou, Châteaudun et alentours.</p>
+    <p>
+      N'hésitez pas à nous appeler ou à nous envoyer un email pour obtenir un devis gratuit, personnalisé selon vos besoins. Nous sommes à votre service 7 jours sur 7.
+    </p>
+    
+    <!-- Carte Google Maps centrée sur Chartres -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10613.261300495716!2d1.4816186!3d48.4463195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e411746888f7a1%3A0x40c14484fb23090!2sChartres%2C%20France!5e0!3m2!1sfr!2sfr!4v1713100000000"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </section>
 
   <footer>

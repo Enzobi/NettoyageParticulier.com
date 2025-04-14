@@ -3,44 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Entreprise de Nettoyage 28 - Eure-et-Loir</title>
+  <title>Clean à Proxi - Eure-et-Loir</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      background-color: #f4f8fb;
+      color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #007b9e;
+      background: linear-gradient(135deg, #008cba, #005f78);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
 
     nav {
-      background-color: #005f78;
-      padding: 10px;
-      text-align: center;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
 
     nav a {
-      color: white;
-      margin: 0 15px;
+      color: #007b9e;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #005f78;
     }
 
     .container {
-      padding: 30px;
+      padding: 40px 20px;
       max-width: 900px;
       margin: auto;
       background-color: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      animation: fadeIn 1s ease-in;
     }
 
-    h1 {
-      color: #333;
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #007b9e;
+    }
+
+    h3 {
+      color: #005f78;
+      margin-top: 40px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
     }
 
     .contact {
@@ -48,161 +81,44 @@
       padding: 20px;
       background-color: #e9f6fa;
       border-left: 5px solid #007b9e;
+      border-radius: 8px;
     }
 
     footer {
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       background-color: #f1f1f1;
-      margin-top: 30px;
+      font-size: 0.9em;
+      margin-top: 40px;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .container {
+        padding: 20px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Entreprise de Nettoyage 28</h1>
+    <h1>Clean à Proxi</h1>
     <p>Intervention à Chartres, Dreux, Châteaudun et toute l'Eure-et-Loir</p>
   </header>
 
   <nav>
-    <a href="https://www.prestige3p.fr" target="_blank">Accueil</a>
-    <a href="#">Nos Services</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <div class="container">
-    <h2>Votre expert en propreté en Eure-et-Loir</h2>
-    <p>
-      Nous proposons des services de nettoyage professionnel pour les particuliers, les entreprises et les collectivités. 
-      Que ce soit pour l'entretien de bureaux, le nettoyage après travaux ou la remise en état, notre équipe intervient rapidement et efficacement.
-    </p>
-
-    <h3>Nos prestations :</h3>
-    <ul>
-      <li>Nettoyage de bureaux</li>
-      <li>Remise en état après chantier</li>
-      <li>Nettoyage de vitres</li>
-      <li>Désinfection de locaux</li>
-      <li>Entretien d’immeubles</li>
-    </ul>
-
-    <div class="contact">
-      <h3>Contactez-nous</h3>
-      <p><strong>Téléphone :</strong> 06.41.09.22.75</p>
-      <p><strong>Email :</strong> contact@nettoyage28.fr</p>
-      <p><strong>Zone d’intervention :</strong> Eure-et-Loir (28) - Chartres, Dreux, Nogent-le-Rotrou, etc.</p>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Entreprise de Nettoyage 28. Tous droits réservés.
-  </footer>
-
-</body>
-</html>
-✅ Modifications effectuées :
-Le lien "Accueil" pointe maintenant vers : https://www.prestige3p.fr
-
-J’ai ajouté target="_blank" pour que ça s’ouvre dans un nouvel onglet (tu peux l’enlever si tu veux rester dans la même page)
-
-📦 Tu veux que je te renvoie le fichier prêt à être uploadé sur GitHub ?
-Je peux te générer un .zip contenant ce fichier renommé en index.html si tu veux. Tu veux ?
-
-
-
-
-
-
-
-Vous avez dit :
-fait pareil pour Nos services et contact
-
-
-ChatGPT a dit :
-Parfait ! Voici la version mise à jour de ton site, où :
-
-"Accueil" redirige vers : https://www.prestige3p.fr
-
-"Nos Services" redirige vers : https://www.prestige3p.fr/nos-services
-
-"Contact" redirige vers : https://www.prestige3p.fr/contact
-
-Tous les liens s'ouvrent dans un nouvel onglet (grâce à target="_blank").
-
-✅ Code mis à jour (prêt à être renommé index.html et uploadé)
-html
-Copier
-Modifier
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Entreprise de Nettoyage 28 - Eure-et-Loir</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      background-color: #007b9e;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #005f78;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .container {
-      padding: 30px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      color: #333;
-    }
-
-    .contact {
-      margin-top: 30px;
-      padding: 20px;
-      background-color: #e9f6fa;
-      border-left: 5px solid #007b9e;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #f1f1f1;
-      margin-top: 30px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Entreprise de Nettoyage 28</h1>
-    <p>Intervention à Chartres, Dreux, Châteaudun et toute l'Eure-et-Loir</p>
-  </header>
-
-  <nav>
-    <a href="https://www.prestige3p.fr" target="_blank">Accueil</a>
+    <a href="accueil.html">Accueil</a>
     <a href="https://www.prestige3p.fr/nos-services" target="_blank">Nos Services</a>
     <a href="https://www.prestige3p.fr/contact" target="_blank">Contact</a>
   </nav>
@@ -232,7 +148,7 @@ Modifier
   </div>
 
   <footer>
-    &copy; 2025 Entreprise de Nettoyage 28. Tous droits réservés.
+    &copy; 2025 Clean à Proxi. Tous droits réservés.
   </footer>
 
 </body>

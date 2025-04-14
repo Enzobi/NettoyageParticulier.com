@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entreprise de Nettoyage 28 - Eure-et-Loir</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #007b9e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #005f78;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .contact {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #e9f6fa;
+      border-left: 5px solid #007b9e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #f1f1f1;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Entreprise de Nettoyage 28</h1>
+    <p>Intervention à Chartres, Dreux, Châteaudun et toute l'Eure-et-Loir</p>
+  </header>
+
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">Nos Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Votre expert en propreté en Eure-et-Loir</h2>
+    <p>
+      Nous proposons des services de nettoyage professionnel pour les particuliers, les entreprises et les collectivités. 
+      Que ce soit pour l'entretien de bureaux, le nettoyage après travaux ou la remise en état, notre équipe intervient rapidement et efficacement.
+    </p>
+
+    <h3>Nos prestations :</h3>
+    <ul>
+      <li>Nettoyage de bureaux</li>
+      <li>Remise en état après chantier</li>
+      <li>Nettoyage de vitres</li>
+      <li>Désinfection de locaux</li>
+      <li>Entretien d’immeubles</li>
+    </ul>
+
+    <div class="contact">
+      <h3>Contactez-nous</h3>
+      <p><strong>Téléphone :</strong> 06.41.09.22.75</p>
+      <p><strong>Email :</strong> contact@nettoyage28.fr</p>
+      <p><strong>Zone d’intervention :</strong> Eure-et-Loir (28) - Chartres, Dreux, Nogent-le-Rotrou, etc.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Entreprise de Nettoyage 28. Tous droits réservés.
+  </footer>
+
+</body>
+</html>

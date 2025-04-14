@@ -15,19 +15,30 @@
     }
 
     header {
-      background: linear-gradient(135deg, #00b4d8, #0077b6);
+      background: linear-gradient(135deg, #008cba, #005f78);
       color: white;
-      padding: 60px 20px;
+      padding: 40px 20px;
       text-align: center;
+      background-image: url('https://source.unsplash.com/1600x400/?cleaning,team');
+      background-size: cover;
+      background-position: center;
+      position: relative;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.8em;
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
     }
 
-    header p {
-      font-size: 1.2em;
+    header h1, header p {
+      position: relative;
+      z-index: 1;
     }
 
     nav {
@@ -40,7 +51,7 @@
     }
 
     nav a {
-      color: #0096c7;
+      color: #007b9e;
       text-decoration: none;
       font-weight: 600;
       font-size: 1.1em;
@@ -48,43 +59,27 @@
     }
 
     nav a:hover {
-      color: #0077b6;
+      color: #005f78;
     }
 
     .container {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
       padding: 40px 20px;
       max-width: 1000px;
-      margin: 40px auto;
+      margin: auto;
       background-color: white;
       border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
       animation: fadeIn 1s ease-in;
-    }
-
-    .container > .text-content {
-      flex: 1;
-    }
-
-    .container::before {
-      content: "";
-      width: 8px;
-      height: 100%;
-      background: linear-gradient(180deg, #00b4d8, #88d4a3);
-      margin-right: 20px;
-      border-radius: 8px;
     }
 
     h2 {
       font-size: 2em;
       margin-bottom: 20px;
-      color: #0077b6;
+      color: #007b9e;
     }
 
     h3 {
-      color: #0096c7;
+      color: #005f78;
       margin-top: 40px;
     }
 
@@ -96,12 +91,20 @@
       margin-bottom: 8px;
     }
 
-    .contact, .entreprise {
+    .contact {
       margin-top: 30px;
       padding: 20px;
       background-color: #e9f6fa;
-      border-left: 5px solid #0096c7;
+      border-left: 5px solid #007b9e;
       border-radius: 8px;
+    }
+
+    .image-banner {
+      width: 100%;
+      height: auto;
+      margin: 30px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
     footer {
@@ -119,14 +122,6 @@
     }
 
     @media (max-width: 600px) {
-      .container {
-        flex-direction: column;
-      }
-
-      .container::before {
-        display: none;
-      }
-
       nav {
         flex-direction: column;
         gap: 10px;
@@ -141,7 +136,7 @@
 <body>
   <header>
     <h1>Nettoyage Express Eure-et-Loir</h1>
-    <p>Intervention à Chartres, Dreux, Châteaudun et toute l'Eure-et-Loir</p>
+    <p>Votre expert en propreté à Chartres, Dreux, Châteaudun et toute la région 28</p>
   </header>
 
   <nav>
@@ -153,20 +148,50 @@
   </nav>
 
   <div class="container" id="accueil">
-    <div class="text-content">
-      <h2>Bienvenue sur Nettoyage Express Eure-et-Loir</h2>
-      <p>Votre expert en propreté en Eure-et-Loir. Services professionnels pour particuliers, entreprises et collectivités. Interventions rapides et efficaces pour l'entretien, la remise en état, et la désinfection.</p>
-    </div>
+    <h2>Bienvenue chez Nettoyage Express Eure-et-Loir</h2>
+    <p>Vous recherchez une société de nettoyage réactive, fiable et professionnelle en Eure-et-Loir ? Nettoyage Express est votre partenaire de confiance pour toutes vos prestations de propreté.</p>
+    <img src="https://source.unsplash.com/900x400/?cleaning,building" alt="Nettoyage immeuble" class="image-banner">
+  </div>
+
+  <div class="container" id="services">
+    <h2>Nos Services</h2>
+    <p>Nous proposons un service de nettoyage complet, fiable et professionnel pour particuliers et entreprises.</p>
+    <ul>
+      <li>Nettoyage de bureaux</li>
+      <li>Remise en état après chantier</li>
+      <li>Nettoyage de vitres</li>
+      <li>Désinfection de locaux</li>
+      <li>Entretien d’immeubles</li>
+    </ul>
+    <img src="https://source.unsplash.com/900x400/?cleaning,office" alt="Nettoyage bureau" class="image-banner">
+  </div>
+
+  <div class="container" id="particuliers-professionnels">
+    <h2>Particuliers & Professionnels</h2>
+    <h3>Pour les particuliers</h3>
+    <p>Prestations personnalisées, ponctuelles ou régulières : nettoyage de maison, remise en état, vitres, extérieurs.</p>
+    <h3>Pour les professionnels</h3>
+    <p>Contrats d’entretien sur mesure : bureaux, commerces, cabinets. Horaires adaptés et qualité garantie.</p>
+    <img src="https://source.unsplash.com/900x400/?cleaning,home" alt="Nettoyage particulier" class="image-banner">
   </div>
 
   <div class="container" id="entreprise">
-    <div class="text-content entreprise">
-      <h3>Entreprise</h3>
-      <p><strong>Nom :</strong> SOCIÉTÉ 3P</p>
-      <p><strong>Ville :</strong> Chartres (28000)</p>
-      <p><strong>Activité :</strong> Entreprise de nettoyage professionnelle, spécialisée dans l’entretien de bureaux, commerces, bâtiments industriels et copropriétés.</p>
-      <p>Notre société, basée à Chartres, s'engage à fournir des services de nettoyage de haute qualité adaptés aux besoins spécifiques des professionnels de la région Eure-et-Loir.</p>
-    </div>
+    <h2>Entreprise</h2>
+    <p><strong>Nom :</strong> SOCIÉTÉ 3P</p>
+    <p><strong>Ville :</strong> Chartres (28000)</p>
+    <p><strong>Activité :</strong> Entreprise de nettoyage professionnelle spécialisée dans l’entretien de bureaux, commerces et copropriétés en Eure-et-Loir.</p>
+    <img src="https://source.unsplash.com/900x400/?cleaning,teamwork" alt="Équipe de nettoyage" class="image-banner">
+  </div>
+
+  <div class="container contact" id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Contactez notre équipe pour un devis gratuit. Intervention à Chartres, Dreux, Nogent-le-Rotrou, Châteaudun et alentours.</p>
+    <p><strong>Téléphone :</strong> 06.41.09.22.75<br>
+    <strong>Email :</strong> cleanaproxi@gmail.com</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.3808472909355!2d1.487189376515019!3d48.443791931856565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e42ddef9c61f3d%3A0x40dc8c2d2c5fc10!2sChartres%2C%2028000!5e0!3m2!1sfr!2sfr!4v1713100000000!5m2!1sfr!2sfr" 
+      width="100%" height="300" style="border:0; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </div>
 
   <footer>
@@ -174,6 +199,7 @@
   </footer>
 </body>
 </html>
+
 
 
 

@@ -15,37 +15,79 @@
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
-      background-color: #f4f8fb;
+      background-color: #f9fbfd;
       color: #333;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #008cba, #005f78);
+      background: url('https://images.unsplash.com/photo-1581578017425-df60a1e04f46?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
       color: white;
-      padding: 40px 20px;
+      padding: 80px 20px;
       text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
+    }
+
+    nav {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #007b9e;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #005f78;
     }
 
     .container {
-      padding: 40px 20px;
-      max-width: 900px;
+      padding: 60px 20px;
+      max-width: 1000px;
       margin: auto;
       background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       animation: fadeIn 1s ease-in;
     }
 
     h2 {
       font-size: 2.5em;
       margin-bottom: 20px;
-      color: #007b9e;
+      color: #008cba;
+      text-align: center;
     }
 
     h3 {
@@ -69,19 +111,33 @@
 
     .contact {
       margin-top: 30px;
-      padding: 20px;
+      padding: 30px;
       background-color: #e9f6fa;
       border-left: 5px solid #007b9e;
-      border-radius: 8px;
+      border-radius: 12px;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px;
       background-color: #f1f1f1;
       font-size: 0.9em;
-      margin-top: 40px;
+      margin-top: 60px;
       color: #777;
+    }
+
+    .gallery {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      object-fit: cover;
     }
 
     @keyframes fadeIn {
@@ -90,6 +146,10 @@
     }
 
     @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
       .container {
         padding: 20px;
       }
@@ -98,16 +158,22 @@
 </head>
 <body>
 
-  <header>
+  <header id="accueil">
     <h1>Clean à Proxi</h1>
     <p>Services de nettoyage professionnels en Eure-et-Loir : Chartres, Dreux, Châteaudun et environs</p>
   </header>
 
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <div class="container">
-    <h2>Votre expert en propreté en Eure-et-Loir</h2>
+    <h2 id="services">Votre expert en propreté en Eure-et-Loir</h2>
     <p>Clean à Proxi propose des services de nettoyage sur mesure pour les particuliers et les professionnels. Notre équipe qualifiée intervient avec réactivité et efficacité sur l’ensemble de l’Eure-et-Loir (28), notamment à Chartres, Dreux, Nogent-le-Rotrou, Châteaudun et leurs alentours.</p>
 
-    <h3>Services pour les particuliers</h3>
+    <h3 id="particuliers">Services pour les particuliers</h3>
     <ul>
       <li>Nettoyage régulier de votre maison ou appartement</li>
       <li>Remise en état après travaux ou déménagement</li>
@@ -117,7 +183,7 @@
     </ul>
     <p>Nous utilisons des produits respectueux de l’environnement pour garantir la sécurité de toute la famille.</p>
 
-    <h3>Services pour les professionnels</h3>
+    <h3 id="professionnels">Services pour les professionnels</h3>
     <ul>
       <li>Entretien de bureaux et open space</li>
       <li>Nettoyage après travaux (bureaux, magasins, locaux pro)</li>
@@ -127,7 +193,13 @@
     </ul>
     <p>Nos interventions sont adaptées aux contraintes de votre secteur et respectent les normes d’hygiène les plus strictes.</p>
 
-    <div class="contact">
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1581579202338-2b1f7bfc5d50?auto=format&fit=crop&w=700&q=60" alt="Nettoyage résidentiel">
+      <img src="https://images.unsplash.com/photo-1621344212341-8f1dc960fb87?auto=format&fit=crop&w=700&q=60" alt="Bureau propre">
+      <img src="https://images.unsplash.com/photo-1618221737727-3d83db0b1b62?auto=format&fit=crop&w=700&q=60" alt="Vitres nettoyées">
+    </div>
+
+    <div class="contact" id="contact">
       <h3>Contactez-nous</h3>
       <p><strong>Téléphone :</strong> 06.41.09.22.75</p>
       <p><strong>Email :</strong> cleanaproxi@gmail.com</p>
@@ -141,4 +213,5 @@
 
 </body>
 </html>
+
 

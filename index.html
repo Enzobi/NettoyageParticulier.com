@@ -15,26 +15,23 @@
     }
 
     header {
-      background: url('https://www.ahn-nettoyage.fr/oktThemes/ra159-s/images/rubrique1/Professionnels.jpg') no-repeat center center;
-      background-size: cover;
+      background: linear-gradient(135deg, #00b4d8, #0077b6);
       color: white;
-      padding: 80px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
       font-size: 2.8em;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
 
     header p {
       font-size: 1.2em;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     }
 
     nav {
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: #ffffff;
       display: flex;
       justify-content: center;
       gap: 30px;
@@ -55,13 +52,29 @@
     }
 
     .container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
       padding: 40px 20px;
       max-width: 1000px;
       margin: 40px auto;
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: white;
       border-radius: 12px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
       animation: fadeIn 1s ease-in;
+    }
+
+    .container > .text-content {
+      flex: 1;
+    }
+
+    .container::before {
+      content: "";
+      width: 8px;
+      height: 100%;
+      background: linear-gradient(180deg, #00b4d8, #88d4a3);
+      margin-right: 20px;
+      border-radius: 8px;
     }
 
     h2 {
@@ -83,10 +96,10 @@
       margin-bottom: 8px;
     }
 
-    .contact {
+    .contact, .entreprise {
       margin-top: 30px;
       padding: 20px;
-      background-color: #d8f3ff;
+      background-color: #e9f6fa;
       border-left: 5px solid #0096c7;
       border-radius: 8px;
     }
@@ -94,7 +107,7 @@
     footer {
       text-align: center;
       padding: 20px;
-      background-color: rgba(241, 241, 241, 0.9);
+      background-color: #f1f1f1;
       font-size: 0.9em;
       margin-top: 40px;
       color: #777;
@@ -106,6 +119,14 @@
     }
 
     @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .container::before {
+        display: none;
+      }
+
       nav {
         flex-direction: column;
         gap: 10px;
@@ -122,7 +143,7 @@
     <h1>Nettoyage Express Eure-et-Loir</h1>
     <p>Intervention à Chartres, Dreux, Châteaudun et toute l'Eure-et-Loir</p>
   </header>
-  
+
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#services">Nos Services</a>
@@ -132,63 +153,20 @@
   </nav>
 
   <div class="container" id="accueil">
-    <h2>Bienvenue chez Nettoyage Express Eure-et-Loir</h2>
-    <p>
-      Vous recherchez une société de nettoyage réactive, fiable et professionnelle en Eure-et-Loir ? Nettoyage Express est votre partenaire de confiance pour toutes vos prestations de propreté. Forts de notre expérience et de notre savoir-faire, nous intervenons aussi bien auprès des particuliers que des professionnels pour vous garantir des espaces toujours propres, sains et accueillants.
-    </p>
-    <p>
-      Notre équipe est formée aux meilleures techniques de nettoyage et utilise des produits écoresponsables, respectueux de votre santé et de l’environnement. Intervention rapide, efficacité, discrétion et satisfaction client sont nos priorités.
-    </p>
-  </div>
-
-  <div class="container" id="services">
-    <h2>Nos Services</h2>
-    <p>
-      Nous mettons à disposition notre expertise et notre rigueur pour vous proposer un service de nettoyage complet, fiable et professionnel. Notre équipe s’adapte à vos contraintes horaires et à la configuration de vos locaux pour garantir une prestation discrète et efficace.
-    </p>
-    <p>
-      Que ce soit pour un <strong>nettoyage en profondeur, une remise à neuf après travaux</strong> ou un entretien quotidien, vous pouvez compter sur nous pour offrir un résultat impeccable. Nous utilisons des produits professionnels respectueux de l’environnement et de la santé, et notre personnel est formé aux dernières techniques de nettoyage et de désinfection.
-    </p>
-    <ul>
-      <li>Nettoyage de bureaux</li>
-      <li>Remise en état après chantier</li>
-      <li>Nettoyage de vitres</li>
-      <li>Désinfection de locaux</li>
-      <li>Entretien d’immeubles</li>
-    </ul>
-  </div>
-
-  <div class="container" id="particuliers-professionnels">
-    <h2>Particuliers & Professionnels</h2>
-    <h3>Pour les particuliers</h3>
-    <p>
-      Nos interventions sont conçues pour vous faire gagner du temps et vous offrir un cadre de vie propre, sain et agréable. En plus de nos prestations classiques, nous pouvons adapter nos services à vos demandes spécifiques : grand ménage saisonnier, nettoyage après une fête, entretien lors d’un départ en vacances, etc. La qualité et la discrétion sont nos priorités.
-    </p>
-    <h3>Pour les professionnels</h3>
-    <p>
-      Pour les professionnels, nous savons à quel point l’image de votre entreprise est essentielle. C’est pourquoi nous proposons des prestations sur mesure, avec des horaires flexibles pour ne pas gêner votre activité. Nous collaborons avec des <strong>bureaux, agences, boutiques, restaurants, cabinets médicaux</strong> et plus encore. Chaque client est unique : nous construisons avec vous un plan d’entretien adapté à vos locaux, à votre secteur d’activité et à vos contraintes.
-    </p>
+    <div class="text-content">
+      <h2>Bienvenue sur Nettoyage Express Eure-et-Loir</h2>
+      <p>Votre expert en propreté en Eure-et-Loir. Services professionnels pour particuliers, entreprises et collectivités. Interventions rapides et efficaces pour l'entretien, la remise en état, et la désinfection.</p>
+    </div>
   </div>
 
   <div class="container" id="entreprise">
-    <h2>Entreprise</h2>
-    <p>
-      Située à <strong>Chartres (28000)</strong>, la <strong>SOCIÉTÉ 3P</strong> est une entreprise de nettoyage de confiance pour tous vos besoins en propreté. Nous offrons des prestations professionnelles, ponctuelles ou régulières, pour garantir un environnement de travail sain et accueillant. Grâce à notre savoir-faire et notre rigueur, nous sommes reconnus pour la qualité de nos services et notre engagement envers nos clients dans tout le département de l’Eure-et-Loir.
-    </p>
-  </div>
-
-  <div class="container contact" id="contact">
-    <h2>Contactez-nous</h2>
-    <p>
-      Notre équipe est à votre écoute pour toute demande de renseignement, devis personnalisé ou intervention urgente. Nous mettons un point d'honneur à vous répondre dans les plus brefs délais. Que vous soyez un particulier souhaitant un ménage ponctuel ou une entreprise à la recherche d’un contrat d’entretien régulier, nous avons la solution adaptée à vos besoins.
-    </p>
-    <p>
-      Vous pouvez nous contacter par téléphone au <strong>06.41.09.22.75</strong> ou par email à l'adresse <strong>cleanaproxi@gmail.com</strong>. Nous intervenons dans tout le département de l’Eure-et-Loir, notamment à <strong>Chartres, Dreux, Châteaudun, Nogent-le-Rotrou</strong> et leurs environs.
-    </p>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.3808472909355!2d1.487189376515019!3d48.443791931856565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e42ddef9c61f3d%3A0x40dc8c2d2c5fc10!2sChartres%2C%2028000!5e0!3m2!1sfr!2sfr!4v1713100000000!5m2!1sfr!2sfr" 
-      width="100%" height="300" style="border:0; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <div class="text-content entreprise">
+      <h3>Entreprise</h3>
+      <p><strong>Nom :</strong> SOCIÉTÉ 3P</p>
+      <p><strong>Ville :</strong> Chartres (28000)</p>
+      <p><strong>Activité :</strong> Entreprise de nettoyage professionnelle, spécialisée dans l’entretien de bureaux, commerces, bâtiments industriels et copropriétés.</p>
+      <p>Notre société, basée à Chartres, s'engage à fournir des services de nettoyage de haute qualité adaptés aux besoins spécifiques des professionnels de la région Eure-et-Loir.</p>
+    </div>
   </div>
 
   <footer>
@@ -196,6 +174,7 @@
   </footer>
 </body>
 </html>
+
 
 
 

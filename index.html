@@ -130,6 +130,53 @@
         width: 100%;
       }
     }
+
+    /* Style spécifique pour les formulaires */
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    label {
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #007b9e;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    input[type="text"], input[type="email"] {
+      height: 45px;
+    }
+
+    textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #007b9e;
+      color: white;
+      font-size: 1.1em;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005f78;
+    }
+
   </style>
 </head>
 <body>
@@ -202,6 +249,7 @@
   </footer>
 </body>
 </html>
+
 
 
 

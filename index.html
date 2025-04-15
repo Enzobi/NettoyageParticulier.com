@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NettoyageParticulier.com - Entreprise de nettoyage en Eure-et-Loir</title>
-  <meta name="description" content="Entreprise de nettoyage à Eure-et-Loir. Spécialisée dans le nettoyage de logements, bureaux, traitement du syndrome de Diogène, désinfection, entretien régulier et ponctuel.">
-  <meta name="keywords" content="nettoyage, Eure-et-Loir, syndrome de Diogène, désinfection, entretien, maison, appartement, bureaux, vitres, devis gratuit">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NettoyageParticulier.com - Services de Nettoyage à Domicile</title>
+  <meta name="description" content="Entreprise de nettoyage pour particuliers. Nettoyage maison, appartement, vitres, syndrome de Diogène, devis gratuit. Eure-et-Loir et alentours.">
+  <meta name="keywords" content="nettoyage particulier, nettoyage maison, syndrome de diogène, nettoyage appartement, nettoyage vitre, nettoyage express, devis nettoyage, Eure-et-Loir">
   <meta name="author" content="NettoyageParticulier.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <style>
@@ -29,10 +29,8 @@
     header::after {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 0;
     }
@@ -53,11 +51,8 @@
       text-decoration: none;
       font-weight: 600;
       font-size: 1.1em;
-      transition: color 0.3s ease;
     }
-    nav a:hover {
-      color: #005f78;
-    }
+    nav a:hover { color: #005f78; }
     .container {
       padding: 40px 20px;
       max-width: 1000px;
@@ -65,13 +60,15 @@
       background-color: white;
       border-radius: 12px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      animation: fadeIn 1s ease-in;
       text-align: center;
     }
-    h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #007b9e;
+    .image-banner {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
     footer {
       text-align: center;
@@ -81,78 +78,86 @@
       margin-top: 40px;
       color: #777;
     }
-    .contact {
-      margin-top: 30px;
-      padding: 20px;
-      background-color: #e9f6fa;
-      border-left: 5px solid #007b9e;
-      border-radius: 8px;
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    button {
+      background-color: #007b9e;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005f78;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>NettoyageParticulier.com</h1>
-    <p>Entreprise de nettoyage en Eure-et-Loir spécialisée dans le nettoyage de logements, de locaux professionnels, et dans le traitement du syndrome de Diogène.</p>
+    <p>Entreprise de nettoyage spécialisée pour particuliers : maisons, appartements, vitres, situations complexes comme le syndrome de Diogène. Interventions rapides dans l'Eure-et-Loir.</p>
   </header>
-
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#services">Services</a>
     <a href="#diogene">Syndrome de Diogène</a>
+    <a href="#devis">Devis</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section class="container" id="accueil">
-    <h2>Votre spécialiste du nettoyage à Eure-et-Loir</h2>
-    <p>NettoyageParticulier.com est une entreprise de nettoyage qui intervient rapidement pour tous types de besoins : nettoyage de logements, remise en état, entretien régulier ou ponctuel, et traitements spécifiques.</p>
-  </section>
+  <div class="container" id="accueil">
+    <h2>Bienvenue chez NettoyageParticulier.com</h2>
+    <p>Nous sommes une entreprise de nettoyage spécialisée dans l'entretien des logements de particuliers. Nous intervenons rapidement pour nettoyer votre maison ou appartement, y compris dans les cas complexes tels que le syndrome de Diogène.</p>
+    <img src="https://www.eps-nettoyage.com/sites/2156d718/files/styles/soref_diapo/public/eps-nettoyage-3.jpg?itok=iREK409K" alt="Nettoyage domicile" class="image-banner">
+  </div>
 
-  <section class="container" id="services">
-    <h2>Nos services</h2>
-    <p>Nous proposons des prestations de nettoyage sur mesure pour :</p>
-    <ul>
-      <li>Maisons et appartements</li>
-      <li>Bureaux et locaux professionnels</li>
-      <li>Nettoyage après déménagement ou travaux</li>
-      <li>Désinfection et nettoyage en profondeur</li>
-      <li>Entretien d’immeubles et copropriétés</li>
-    </ul>
-  </section>
+  <div class="container" id="services">
+    <h2>Nos Services</h2>
+    <p>Nettoyage complet de maison ou d'appartement, nettoyage après déménagement, lavage de vitres, désinfection et nettoyage en profondeur des lieux insalubres.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNysbvUHXnU0ycEM6QlXTNerVpceNTl0iVvQ&s" alt="Service nettoyage" class="image-banner">
+  </div>
 
-  <section class="container" id="diogene">
-    <h2>Nettoyage après syndrome de Diogène</h2>
-    <p>Nous intervenons avec discrétion et efficacité dans les cas de syndrome de Diogène. Ces situations nécessitent un nettoyage approfondi, une désinfection complète, et parfois un débarras massif. Notre équipe est formée pour gérer ces interventions sensibles, en respectant la personne et son environnement.</p>
-  </section>
+  <div class="container" id="diogene">
+    <h2>Syndrome de Diogène</h2>
+    <p>Nous proposons une intervention spécialisée pour les logements touchés par le syndrome de Diogène. Cela inclut le tri, le débarras, la désinfection, et la remise en état complète du logement. Notre équipe intervient avec discrétion, respect et efficacité.</p>
+    <img src="https://www.sosdiogene.fr/images/syndrome_diogene.jpg" alt="Intervention Diogène" class="image-banner">
+  </div>
 
-  <section class="container contact" id="contact">
-    <h2>Contact & Devis</h2>
-    <p>Pour toute demande de renseignement ou pour obtenir un devis gratuit :</p>
-    <p><strong>Email :</strong> <a href="mailto:nettoyageparticulier.com@gmail.com">nettoyageparticulier.com@gmail.com</a></p>
-    <p><strong>Téléphone :</strong> 06.41.09.22.75</p>
-    <form action="#" method="post">
-      <label for="name">Nom :</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-
-      <label for="email">Email :</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-
+  <div class="container contact" id="devis">
+    <h2>Demande de devis personnalisé</h2>
+    <p>Vous souhaitez obtenir un devis gratuit pour un service de nettoyage ? Remplissez ce formulaire, et nous vous recontacterons dans les plus brefs délais.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="nom">Nom complet :</label><br>
+      <input type="text" id="nom" name="nom" required><br>
+      <label for="email">Adresse email :</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="tel">Téléphone :</label><br>
+      <input type="tel" id="tel" name="tel"><br>
       <label for="message">Votre demande :</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
+      <textarea id="message" name="message" rows="6" required></textarea><br>
       <button type="submit">Envoyer</button>
     </form>
-  </section>
+  </div>
+
+  <div class="container contact" id="contact">
+    <h2>Contact</h2>
+    <p><strong>Téléphone :</strong> 06.41.09.22.75<br>
+    <strong>Email :</strong> nettoyageparticulier.com@gmail.com</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.3808472909355!2d1.487189376515019!3d48.443791931856565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e42ddef9c61f3d%3A0x40dc8c2d2c5fc10!2sChartres%2C%2028000!5e0!3m2!1sfr!2sfr!4v1713100000000!5m2!1sfr!2sfr" width="100%" height="300" style="border:0; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 
   <footer>
-    &copy; 2025 NettoyageParticulier.com - Tous droits réservés.
+    &copy; 2025 NettoyageParticulier.com. Tous droits réservés.
   </footer>
 </body>
 </html>
+
 
 
 

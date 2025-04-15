@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nettoyage Particulier</title>
+  <title>Nettoyage Particulier - Devis et Services</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -101,7 +101,7 @@
     }
 
     .image-banner {
-      width: 50%;
+      width: 50%; /* Ajustement de la largeur des images */
       height: auto;
       margin: 20px 0;
       border-radius: 10px;
@@ -127,7 +127,7 @@
 
     @media (max-width: 600px) {
       .image-banner {
-        width: 100%;
+        width: 100%; /* Sur les petits écrans, les images prendront 100% de la largeur */
       }
     }
   </style>
@@ -135,66 +135,68 @@
 <body>
   <header>
     <h1>Nettoyage Particulier</h1>
-    <p>Une entreprise spécialisée dans le nettoyage pour particuliers et professionnels dans la région.</p>
+    <p>Une entreprise de nettoyage fiable pour particuliers et professionnels dans la région d'Eure-et-Loir.</p>
   </header>
 
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#services">Nos Services</a>
-    <a href="#services-specialises">Services Spécialisés</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <div class="container" id="accueil">
-    <h2>Bienvenue sur Nettoyage Particulier</h2>
-    <p>Nous proposons des services de nettoyage sur mesure pour les particuliers et les professionnels dans toute la région. Que vous soyez à la recherche de nettoyage de bureaux, de nettoyage après chantier ou de services spécialisés, nous avons des solutions adaptées à vos besoins.</p>
+    <h2>Bienvenue chez Nettoyage Particulier</h2>
+    <p>Nous sommes une entreprise spécialisée dans les services de nettoyage pour particuliers et professionnels. Nous vous offrons des prestations de qualité, adaptées à vos besoins spécifiques. Que vous ayez besoin de nettoyer votre maison, vos bureaux, ou même d'effectuer un nettoyage après déménagement, nous sommes là pour vous!</p>
+    <p>Vous souhaitez obtenir un devis personnalisé pour nos services de nettoyage ? Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+
+    <!-- Formulaire de devis -->
+    <h3>Demander un devis</h3>
+    <form action="https://formspree.io/f/your-email" method="POST">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="message">Détails du devis :</label>
+      <textarea id="message" name="message" required></textarea><br>
+
+      <button type="submit">Envoyer</button>
+    </form>
+
     <img src="https://www.eps-nettoyage.com/sites/2156d718/files/styles/soref_diapo/public/eps-nettoyage-3.jpg?itok=iREK409K" alt="Nettoyage immeuble" class="image-banner">
   </div>
 
   <div class="container" id="services">
     <h2>Nos Services</h2>
-    <p>Nous offrons des services de nettoyage variés pour répondre à tous vos besoins :</p>
+    <p>Nous proposons une gamme complète de services de nettoyage, tant pour les particuliers que pour les entreprises. Chaque service est personnalisé pour répondre à vos besoins spécifiques. Nos équipes sont formées et utilisent des équipements de qualité pour assurer un nettoyage impeccable.</p>
+
+    <h3>Pour les particuliers</h3>
     <ul>
-      <li><strong>Nettoyage de bureaux</strong> : Gardez vos espaces de travail propres et agréables.</li>
-      <li><strong>Nettoyage après chantier</strong> : Redonnez de la propreté à vos espaces après des travaux.</li>
-      <li><strong>Nettoyage de vitres</strong> : Pour des fenêtres impeccables, quel que soit l'environnement.</li>
-      <li><strong>Désinfection de locaux</strong> : Assurez la sécurité de vos espaces avec un nettoyage désinfectant.</li>
+      <li><strong>Nettoyage de maison :</strong> Profitez d'un environnement sain et agréable grâce à notre service de nettoyage pour la maison.</li>
+      <li><strong>Nettoyage après déménagement :</strong> Nous vous aidons à laisser votre ancien logement impeccable.</li>
+      <li><strong>Nettoyage des vitres :</strong> Nous nettoyons vos fenêtres et surfaces vitrées pour un résultat brillant.</li>
+      <li><strong>Entretien des espaces extérieurs :</strong> Nous nous occupons de votre jardin et de vos espaces extérieurs pour un environnement agréable.</li>
     </ul>
+
+    <h3>Pour les professionnels</h3>
+    <ul>
+      <li><strong>Nettoyage de bureaux :</strong> Des solutions sur mesure pour garder vos espaces de travail propres et bien entretenus.</li>
+      <li><strong>Entretien des commerces :</strong> Nous assurons la propreté de vos magasins et points de vente.</li>
+      <li><strong>Nettoyage des salles de réunion :</strong> Nous nettoyons vos espaces de réunion pour garantir un environnement professionnel optimal.</li>
+    </ul>
+
+    <h3>Services spécialisés</h3>
+    <p>Nous proposons également des services spécialisés, comme le nettoyage après chantier, la désinfection de locaux et l'entretien d'immeubles. Nous avons aussi une expertise dans le traitement des cas de syndrome de Diogène, où une intervention spécifique est nécessaire pour remettre en état un logement dans des conditions extrêmes.</p>
+
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNysbvUHXnU0ycEM6QlXTNerVpceNTl0iVvQ&s" alt="Nettoyage bureau" class="image-banner">
-  </div>
-
-  <div class="container" id="services-specialises">
-    <h2>Nos Services Spécialisés</h2>
-    <p>Chez Nettoyage Particulier, nous comprenons que chaque situation est unique et nécessite des solutions adaptées. C'est pourquoi nous avons développé des services spécialisés pour répondre aux besoins spécifiques de nos clients. Parmi ces services, nous proposons une aide précieuse pour les personnes souffrant du syndrome de Diogène, un trouble qui affecte profondément la qualité de vie.</p>
-
-    <section id="syndrome-diogene">
-      <h3>Syndrome de Diogène : Une aide nécessaire pour les personnes concernées</h3>
-      <p>Le syndrome de Diogène est un trouble comportemental caractérisé par une accumulation excessive d'objets et une négligence extrême de l'hygiène personnelle et de l'environnement de vie. Cela peut conduire à des situations où l'environnement domestique devient un lieu insalubre et dangereux. Ce trouble peut avoir des causes variées, telles que des traumatismes, des troubles mentaux ou des situations de grande précarité sociale.</p>
-      
-      <p>Notre équipe est formée pour intervenir dans ces situations délicates et offrir un nettoyage respectueux et en profondeur, permettant de restaurer un environnement sain et sécurisé pour la personne concernée. Nous comprenons l'importance de traiter chaque situation avec la plus grande dignité et discrétion, en prenant soin de ne pas créer de stress supplémentaire.</p>
-
-      <h4>Nos services pour le Syndrome de Diogène :</h4>
-      <ul>
-        <li><strong>Nettoyage en profondeur</strong> : Nous réalisons un nettoyage complet, débarrassant les lieux des déchets et objets accumulés, tout en assurant la sécurité de l'habitation.</li>
-        <li><strong>Tri et gestion des objets</strong> : Nous intervenons pour trier les objets accumulés, en aidant à faire le tri de manière empathique, tout en respectant le rythme de la personne concernée.</li>
-        <li><strong>Débarras et désinfection</strong> : Notre équipe prend en charge le débarras des objets inutiles et effectue une désinfection totale des lieux pour garantir un environnement sain et sécurisé.</li>
-        <li><strong>Accompagnement et soutien</strong> : Nous collaborons avec les proches et, si nécessaire, avec des professionnels de santé pour assurer un soutien complet pendant et après l'intervention.</li>
-      </ul>
-
-      <p>Nous savons qu'une telle intervention peut être sensible et émotionnellement chargée. C'est pourquoi nous nous efforçons de fournir un service qui respecte la personne concernée tout en garantissant une propreté et une sécurité optimales.</p>
-      <p>Si vous ou l'un de vos proches êtes confrontés à cette situation, n'hésitez pas à nous contacter pour une intervention personnalisée et discrète. Nous sommes là pour vous aider à restaurer un cadre de vie plus sain et agréable.</p>
-    </section>
   </div>
 
   <div class="container contact" id="contact">
     <h2>Contactez-nous</h2>
-    <p>Pour toute demande de renseignement ou pour organiser une intervention, contactez-nous :</p>
+    <p>Vous avez des questions ou souhaitez plus d'informations sur nos services ? N'hésitez pas à nous contacter pour toute demande de renseignement ou pour recevoir un devis personnalisé.</p>
     <p><strong>Téléphone :</strong> 06.41.09.22.75<br>
     <strong>Email :</strong> nettoyageparticulier.com@gmail.com</p>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.3808472909355!2d1.487189376515019!3d48.443791931856565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e42ddef9c61f3d%3A0x40dc8c2d2c5fc10!2sChartres%2C%2028000!5e0!3m2!1sfr!2sfr!4v1713100000000!5m2!1sfr!2sfr" 
-      width="100%" height="300" style="border:0; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
   </div>
 
   <footer>
@@ -202,6 +204,7 @@
   </footer>
 </body>
 </html>
+
 
 
 

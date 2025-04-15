@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NettoyageParticulier.com - Service de Nettoyage Professionnel</title>
-  <meta name="description" content="Entreprise de nettoyage pour particuliers et professionnels. Spécialistes du nettoyage après déménagement, entretien régulier, et traitement du syndrome de Diogène.">
-  <meta name="keywords" content="nettoyage particulier, nettoyage professionnel, nettoyage Eure-et-Loir, Diogène, désinfection, ménage maison, nettoyage vitres, entretien immeuble">
-  <meta name="author" content="NettoyageParticulier.com">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nettoyage Particulier - Services de nettoyage pour particuliers</title>
+  <meta name="description" content="Nettoyage Particulier est une entreprise spécialisée dans les services de nettoyage pour particuliers. Nous offrons des prestations de nettoyage à domicile adaptées à vos besoins." />
+  <meta name="keywords" content="nettoyage particulier, nettoyage maison, nettoyage appartement, nettoyage de printemps, ménage à domicile" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -14,148 +13,177 @@
       margin: 0;
       background-color: #f4f8fb;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
-      background: url('https://organilog-proprete.com/wp-content/uploads/2022/11/planning-entreprise-de-nettoyage.jpg') center/cover no-repeat;
+      background: linear-gradient(135deg, #008cba, #005f78);
       color: white;
-      padding: 60px 20px;
-      position: relative;
+      padding: 40px 20px;
       text-align: center;
+      background-image: url('https://organilog-proprete.com/wp-content/uploads/2022/11/planning-entreprise-de-nettoyage.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
     }
+
     header::after {
       content: "";
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-color: rgba(0,0,0,0.6);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
       z-index: 0;
     }
+
     header h1, header p {
       position: relative;
       z-index: 1;
     }
+
     nav {
-      background-color: #fff;
+      background-color: #ffffff;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
       padding: 15px 0;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
+
     nav a {
       color: #007b9e;
       text-decoration: none;
       font-weight: 600;
+      font-size: 1.1em;
       transition: color 0.3s ease;
     }
+
     nav a:hover {
       color: #005f78;
     }
+
     .container {
-      max-width: 1100px;
-      margin: 40px auto;
-      background: white;
-      padding: 40px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
       border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      animation: fadeIn 1s ease-in;
+      text-align: center;
     }
+
     h2 {
-      color: #007b9e;
-      margin-bottom: 20px;
       font-size: 2em;
-    }
-    .image-banner {
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
-      border-radius: 10px;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    .contact {
-      background-color: #e0f7fa;
-      border-left: 5px solid #007b9e;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
       margin-bottom: 20px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
+      color: #007b9e;
     }
-    form button {
-      background-color: #007b9e;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1em;
-      cursor: pointer;
+
+    h3 {
+      color: #005f78;
+      margin-top: 40px;
     }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #e9f6fa;
+      border-left: 5px solid #007b9e;
+      border-radius: 8px;
+    }
+
+    .image-banner {
+      width: 50%; 
+      height: auto;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background-color: #f1f1f1;
-      color: #666;
+      font-size: 0.9em;
+      margin-top: 40px;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .image-banner {
+        width: 100%; 
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>NettoyageParticulier.com</h1>
-    <p>Entreprise de nettoyage spécialisée dans l'entretien de logements, bureaux, et traitement de cas sensibles comme le syndrome de Diogène.</p>
+    <h1>Nettoyage Particulier - Services de nettoyage pour particuliers</h1>
+    <p>Nous offrons des services de nettoyage professionnels pour les particuliers dans toute la région d'Eure-et-Loir. Que ce soit pour un ménage de routine, un nettoyage de printemps, ou une intervention pour un cas particulier, nous avons des solutions adaptées à vos besoins.</p>
   </header>
 
   <nav>
-    <a href="#services">Services</a>
-    <a href="#diogene">Syndrome de Diogène</a>
-    <a href="#devis">Demande de devis</a>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Nos Services</a>
+    <a href="#particuliers">Pour les Particuliers</a>
     <a href="#contact">Contact</a>
   </nav>
 
+  <div class="container" id="accueil">
+    <h2>Bienvenue sur Nettoyage Particulier</h2>
+    <p>Nettoyage Particulier est une entreprise de nettoyage dédiée aux particuliers. Nous mettons à votre disposition des services de nettoyage à domicile personnalisés pour rendre votre vie plus agréable et votre environnement plus sain. Nous offrons des prestations de qualité pour tous vos besoins en nettoyage, avec des professionnels qualifiés et respectueux de l'environnement.</p>
+    <img src="https://www.eps-nettoyage.com/sites/2156d718/files/styles/soref_diapo/public/eps-nettoyage-3.jpg?itok=iREK409K" alt="Nettoyage appartement" class="image-banner">
+  </div>
+
   <div class="container" id="services">
     <h2>Nos Services</h2>
-    <div class="section">
-      <p>Nous offrons une gamme complète de services de nettoyage : nettoyage régulier ou ponctuel de logements, entretien de bureaux, nettoyage après déménagement ou sinistre, et plus encore.</p>
-      <img src="https://www.eps-nettoyage.com/sites/2156d718/files/styles/soref_diapo/public/eps-nettoyage-3.jpg" alt="Nettoyage immeuble" class="image-banner">
-    </div>
+    <p>Nettoyage Particulier propose une gamme complète de services de nettoyage pour particuliers, adaptés à vos besoins spécifiques :</p>
+    <ul>
+      <li><strong>Nettoyage régulier à domicile</strong> : Nous offrons des services de ménage réguliers pour maintenir votre maison propre, que ce soit chaque semaine, toutes les deux semaines, ou selon votre emploi du temps.</li>
+      <li><strong>Nettoyage de printemps</strong> : Profitez d'un nettoyage en profondeur de votre maison pour commencer l'année sur de bonnes bases. Nous nous occupons de toutes les tâches de nettoyage difficiles à atteindre.</li>
+      <li><strong>Nettoyage après déménagement</strong> : Un nettoyage approfondi après un déménagement pour laisser votre ancien logement propre et prêt à recevoir de nouveaux habitants.</li>
+      <li><strong>Nettoyage des vitres</strong> : Nous offrons un service professionnel pour nettoyer vos fenêtres, vitrines et autres surfaces vitrées, pour un résultat impeccable.</li>
+      <li><strong>Désinfection à domicile</strong> : Pour des raisons sanitaires ou pour une protection accrue, nous proposons un service de désinfection complet pour éliminer toutes les bactéries et virus dans votre maison.</li>
+    </ul>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNysbvUHXnU0ycEM6QlXTNerVpceNTl0iVvQ&s" alt="Nettoyage maison" class="image-banner">
   </div>
 
-  <div class="container" id="diogene">
-    <h2>Traitement du Syndrome de Diogène</h2>
-    <div class="section">
-      <p>Nous sommes spécialisés dans l’intervention délicate auprès de personnes atteintes du syndrome de Diogène. Cela comprend le tri, le débarras, le nettoyage et la désinfection des lieux en toute discrétion et avec professionnalisme.</p>
-      <img src="https://www.propertis.fr/wp-content/uploads/2021/10/diogene.png" alt="Nettoyage Diogène" class="image-banner">
-    </div>
-  </div>
-
-  <div class="container" id="devis">
-    <h2>Demande de Devis</h2>
-    <form action="#" method="POST">
-      <label for="nom">Nom :</label>
-      <input type="text" id="nom" name="nom" required>
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email" required>
-      <label for="service">Type de service :</label>
-      <input type="text" id="service" name="service" placeholder="Ex: Nettoyage après déménagement">
-      <label for="message">Détails :</label>
-      <textarea id="message" name="message" rows="5"></textarea>
-      <button type="submit">Envoyer la demande</button>
-    </form>
+  <div class="container" id="particuliers">
+    <h2>Pour les Particuliers</h2>
+    <h3>Un Service Personnalisé à Domicile</h3>
+    <p>Nous comprenons que chaque maison et chaque situation est différente. C'est pourquoi nous offrons un service de nettoyage sur mesure, adapté à vos besoins spécifiques. Que vous ayez besoin d'un nettoyage léger ou d'une intervention plus poussée, nous avons les solutions pour vous :</p>
+    <ul>
+      <li><strong>Entretien de la maison</strong> : Notre service de ménage comprend le nettoyage des sols, des surfaces, des cuisines et des salles de bains. Nous nous occupons de tout pour que vous puissiez profiter de votre espace de vie.</li>
+      <li><strong>Nettoyage des tapis et moquettes</strong> : Nous avons des équipements professionnels pour nettoyer vos tapis et moquettes en profondeur, en éliminant les taches et les allergènes.</li>
+      <li><strong>Nettoyage après fête ou événement</strong> : Après une fête ou un événement à la maison, nous intervenons pour remettre tout en ordre et nettoyer tous les dégâts.</li>
+      <li><strong>Organisation et rangement</strong> : En plus du nettoyage, nous pouvons vous aider à organiser vos espaces et à désencombrer les zones qui en ont besoin.</li>
+    </ul>
+    <img src="https://www.entreprisenettoyageparis.fr/wp-content/uploads/2022/08/nettoyage-parties-communes-immeuble.jpg" alt="Nettoyage intérieur" class="image-banner">
   </div>
 
   <div class="container contact" id="contact">
-    <h2>Contact</h2>
-    <p>Pour toute information complémentaire ou demande spécifique, n'hésitez pas à nous écrire :</p>
-    <p><strong>Email :</strong> nettoyageparticulier.com@gmail.com<br>
-    <strong>Téléphone :</strong> 06.41.09.22.75</p>
+    <h2>Contactez-nous</h2>
+    <p>Pour toute demande de devis ou plus d'informations sur nos services, n'hésitez pas à nous contacter. Nous sommes là pour vous aider à maintenir un environnement propre et sain à domicile.</p>
+    <p><strong>Téléphone :</strong> 06.41.09.22.75<br>
+    <strong>Email :</strong> nettoyageparticulier.com@gmail.com</p>
     <iframe 
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.3808472909355!2d1.487189376515019!3d48.443791931856565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e42ddef9c61f3d%3A0x40dc8c2d2c5fc10!2sChartres%2C%2028000!5e0!3m2!1sfr!2sfr!4v1713100000000!5m2!1sfr!2sfr" 
       width="100%" height="300" style="border:0; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -163,7 +191,7 @@
   </div>
 
   <footer>
-    &copy; 2025 NettoyageParticulier.com - Tous droits réservés.
+    &copy; 2025 Nettoyage Particulier. Tous droits réservés.
   </footer>
 </body>
 </html>

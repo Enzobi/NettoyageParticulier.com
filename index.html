@@ -3,10 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NettoyageParticulier.com - Nettoyage à domicile</title>
-  <meta name="description" content="Entreprise de nettoyage spécialisée pour particuliers en Eure-et-Loir. Intervention rapide, services sur mesure, y compris syndrome de Diogène." />
-  <meta name="keywords" content="nettoyage particulier, Eure-et-Loir, nettoyage maison, syndrome de Diogène, devis nettoyage, services nettoyage domicile" />
-  <meta name="author" content="NettoyageParticulier.com" />
+  <title>Devis - NettoyageParticulier.com</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -17,46 +14,10 @@
       line-height: 1.6;
     }
     header {
-      background: linear-gradient(135deg, #008cba, #005f78);
+      background-color: #008cba;
       color: white;
       padding: 40px 20px;
       text-align: center;
-      background-image: url('https://organilog-proprete.com/wp-content/uploads/2022/11/planning-entreprise-de-nettoyage.jpg');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-    }
-    header::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 0;
-    }
-    header h1, header p {
-      position: relative;
-      z-index: 1;
-    }
-    nav {
-      background-color: #ffffff;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    }
-    nav a {
-      color: #007b9e;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #005f78;
     }
     .container {
       padding: 40px 20px;
@@ -65,122 +26,56 @@
       background-color: white;
       border-radius: 12px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      animation: fadeIn 1s ease-in;
-      text-align: center;
     }
     h2 {
       font-size: 2em;
-      margin-bottom: 20px;
       color: #007b9e;
     }
-    h3 {
-      color: #005f78;
-      margin-top: 40px;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
-    ul {
-      padding-left: 20px;
-      text-align: left;
+    input, textarea {
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 6px;
+      border: 1px solid #ccc;
     }
-    ul li {
-      margin-bottom: 8px;
+    button {
+      background-color: #007b9e;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 1.1em;
+      cursor: pointer;
     }
-    .contact {
-      margin-top: 30px;
-      padding: 20px;
-      background-color: #e9f6fa;
-      border-left: 5px solid #007b9e;
-      border-radius: 8px;
-    }
-    .image-banner {
-      width: 50%;
-      height: auto;
-      margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #f1f1f1;
-      font-size: 0.9em;
-      margin-top: 40px;
-      color: #777;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @media (max-width: 600px) {
-      .image-banner {
-        width: 100%;
-      }
+    button:hover {
+      background-color: #005f78;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>NettoyageParticulier.com</h1>
-    <p>Entreprise spécialisée dans le nettoyage à domicile en Eure-et-Loir. Nous proposons des prestations personnalisées pour répondre à tous vos besoins en propreté.</p>
+    <h1>Demandez un devis personnalisé</h1>
+    <p>Complétez le formulaire ci-dessous et nous vous enverrons un devis adapté à vos besoins.</p>
   </header>
 
-  <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#services">Services spécialisés</a>
-    <a href="#entreprise">Entreprise</a>
-    <a href="#contact">Contact</a>
-    <a href="devis.html" style="background-color:#007b9e; color:white; padding:8px 15px; border-radius:6px;">Devis</a>
-  </nav>
+  <div class="container">
+    <h2>Formulaire de demande de devis</h2>
+    <form action="#">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
 
-  <div class="container" id="accueil">
-    <h2>Bienvenue chez NettoyageParticulier.com</h2>
-    <p>Notre entreprise est dédiée exclusivement aux particuliers souhaitant bénéficier d’un service de nettoyage professionnel, fiable et personnalisé. Que ce soit pour un grand ménage de printemps, un nettoyage après déménagement ou encore une remise en état après un sinistre, nous intervenons rapidement et efficacement.</p>
-    <p>Implantée en Eure-et-Loir, notre équipe met un point d’honneur à offrir un service respectueux, discret et parfaitement adapté à votre situation. Faites appel à nous pour redonner propreté et confort à votre intérieur.</p>
-    <img src="https://www.eps-nettoyage.com/sites/2156d718/files/styles/soref_diapo/public/eps-nettoyage-3.jpg?itok=iREK409K" alt="Nettoyage maison" class="image-banner">
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Description du service souhaité :</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Envoyer la demande</button>
+    </form>
   </div>
-
-  <div class="container" id="services">
-    <h2>Services spécialisés</h2>
-    <p>Nous proposons une gamme complète de services de nettoyage à domicile, conçus pour répondre à des besoins variés et parfois très spécifiques. Notre objectif est de vous libérer des tâches ménagères les plus complexes, avec professionnalisme et efficacité.</p>
-    <ul>
-      <li><strong>Nettoyage complet de la maison :</strong> prestations ponctuelles ou régulières pour entretenir toutes les pièces de votre logement.</li>
-      <li><strong>Nettoyage après déménagement :</strong> pour rendre un logement impeccable avant un état des lieux ou avant votre emménagement.</li>
-      <li><strong>Entretien des vitres :</strong> redonnez de la luminosité à votre intérieur avec des vitres parfaitement propres.</li>
-      <li><strong>Services pour le <em>syndrome de Diogène</em> :</strong> intervention délicate et professionnelle dans les logements encombrés ou insalubres. Nous procédons à un nettoyage en profondeur, un tri, une désinfection complète et une remise en état dans le respect et la discrétion la plus totale.</li>
-    </ul>
-    <img src="https://www.entreprisenettoyageparis.fr/wp-content/uploads/2022/08/nettoyage-parties-communes-immeuble.jpg" alt="Service spécialisé nettoyage" class="image-banner">
-  </div>
-
-  <div class="container" id="entreprise">
-    <h2>Notre entreprise</h2>
-    <p><strong>Nom :</strong> NettoyageParticulier.com</p>
-    <p><strong>Basée à :</strong> Chartres (28), nous couvrons toute la région Eure-et-Loir et ses alentours.</p>
-    <p>Notre mission est de vous offrir un environnement propre, sain et agréable, quels que soient les défis de nettoyage rencontrés. Nous nous engageons à utiliser des produits écoresponsables, à former nos intervenants aux meilleures pratiques, et à respecter scrupuleusement vos espaces de vie.</p>
-    <img src="https://www.legalplace.fr/wp-content/uploads/2019/02/new-11.02-Content-Squad-Cr%C3%A9er-une-entreprise-de-nettoyage-1.jpg" alt="Équipe de nettoyage" class="image-banner">
-  </div>
-
-  <div class="container contact" id="contact">
-    <h2>Contactez-nous</h2>
-    <p>Vous souhaitez en savoir plus, planifier une intervention ou poser une question ? N’hésitez pas à nous contacter :</p>
-    <p><strong>Téléphone :</strong> 06.41.09.22.75<br>
-    <strong>Email :</strong> nettoyageparticulier.com@gmail.com</p>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.3808472909355!2d1.487189376515019!3d48.443791931856565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e42ddef9c61f3d%3A0x40dc8c2d2c5fc10!2sChartres%2C%2028000!5e0!3m2!1sfr!2sfr!4v1713100000000!5m2!1sfr!2sfr" 
-      width="100%" height="300" style="border:0; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-
-  <div style="text-align:center; margin-top: 40px;">
-    <a href="devis.html" style="background-color:#007b9e; color:white; padding:15px 30px; font-size:1.1em; border-radius:8px; text-decoration:none; font-weight:bold;">
-      Demander un devis
-    </a>
-  </div>
-
-  <footer>
-    &copy; 2025 NettoyageParticulier.com - Tous droits réservés.
-  </footer>
 </body>
 </html>
 
